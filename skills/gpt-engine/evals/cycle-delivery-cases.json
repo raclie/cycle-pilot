@@ -1,0 +1,82 @@
+{
+  "purpose": "合成Missionで実行範囲、成果単位、保存照合、停止判断を独立点検する。実Mission・GitHubへのwriteは行わない。",
+  "cases": [
+    {
+      "id": "D01",
+      "request": "次すすめて",
+      "state": {"cycle": "0012", "next_step": 1, "cycle_status": "active", "circuit_status": "closed"},
+      "mission": "読者が3候補の適合条件と費用から比較判断できる、根拠付きの比較節を事前構築する。入力と保存権限は揃っている。",
+      "backlog": ["比較表の条件列を作る", "同じ候補の費用根拠を付ける", "比較表と本文の推奨条件を同期する", "比較節の条件・根拠対応を点検する", "別の成果物の配色を変更する"]
+    },
+    {
+      "id": "D02",
+      "request": "続けて",
+      "state": {"cycle": "0007", "next_step": 4, "cycle_status": "active", "circuit_status": "closed"},
+      "saved": ["01-analysis.md", "02-action.md", "03-prompt.md"],
+      "mission": "固定入力から、仕様案・入出力例・負例・検証方法を含む実行packetを作る。保存済みPromptにその全範囲が記載されている。必要なツールは利用可能。"
+    },
+    {
+      "id": "D03",
+      "request": "2をすすめて。選定結果だけ確認したい。",
+      "state": {"cycle": "0009", "next_step": 2, "cycle_status": "active", "circuit_status": "closed"},
+      "mission": "単一の比較節を根拠付きで完成させる。分析は保存済み。",
+      "backlog": ["比較条件の対応を修正", "同じ節の出典整合を確認", "別Missionの構成を全面変更"]
+    },
+    {
+      "id": "D04",
+      "request": "次すすめて",
+      "state": {"cycle": "0011", "next_step": 8, "cycle_status": "active", "circuit_status": "closed"},
+      "saved": ["01-analysis.md", "02-action.md", "03-prompt.md", "04-output/README.md", "05-evaluation.md", "06-engine-review.md", "07-cycle-review.md"],
+      "mission": "選定Actionの成果は保存済み。未着手の別Actionもある。今回の設計同期には変更不要の根拠がある。"
+    },
+    {
+      "id": "D05",
+      "request": "Cycle Pilotを進めて",
+      "state": {"cycle": "0003", "next_step": 1, "cycle_status": "active", "circuit_status": "closed"},
+      "mission": "引継ぎ資料から検証手順へ到達できることが最後の事前構築条件。既存のリンク先1個が誤った名前を指す。正しい資料は存在し、関連リンクも確認可能。他の内容は検証済み。",
+      "backlog": ["壊れた参照の修復", "関係のない文書の全面改稿"]
+    },
+    {
+      "id": "D06",
+      "request": "次すすめて",
+      "state": {"cycle": "0020", "next_step": 1, "cycle_status": "active", "circuit_status": "closed"},
+      "mission": "複数カテゴリ全体の事前構築。各カテゴリは独立して受け入れ可能。実測では全カテゴリ一括は実行上限を超えるが、1カテゴリの本文・根拠・条件対照・引継ぎは同一セッションで完了可能。カテゴリ内の根拠がないと本文を受け入れられない。"
+    },
+    {
+      "id": "D07",
+      "request": "続けて",
+      "state": {"cycle": "0004", "next_step": 4, "cycle_status": "active", "circuit_status": "closed"},
+      "mission": "Actionの実行は完了。GitHub書込みtoolがエラーを返したが、通常のread-backでは必須Artifactが意図した版で全て保存済み。STATEだけがStep 3のまま。STATEと後続工程は保存可能。"
+    },
+    {
+      "id": "D08",
+      "request": "次すすめて",
+      "state": {"cycle": "0006", "next_step": 7, "cycle_status": "active", "circuit_status": "open", "blocked_step": 4, "transition_reason": "retry_budget_exhausted"},
+      "mission": "同じ保存拒否がretry上限に到達。failure-record.mdは保存不能。07の正規保存先、必要な共有registry、08、STATEは保存・再取得可能。Step 4の必須成果物の一部、Step 5/6は未実施。"
+    },
+    {
+      "id": "D09",
+      "request": "次すすめて",
+      "state": {"cycle": "0005", "next_step": 1, "cycle_status": "completed", "circuit_status": "closed"},
+      "mission": "事前構築の成功条件は全達成。固定版handoffは保存・再取得済みでready。本構築のローカルbuildと独立監査は未実施で、正規担当へ引き継ぐ。"
+    },
+    {
+      "id": "D10",
+      "request": "次すすめて",
+      "state": {"cycle": "0010", "next_step": 4, "cycle_status": "active", "circuit_status": "closed"},
+      "mission": "必須入力を取得できず、Actionは未達。別の範囲内Actionもpacket準備余地もない。GitHubの全正規保存先が認証拒否となり、read-backも利用不能。新しい認証権限はユーザーまたは管理者が復旧する必要がある。"
+    },
+    {
+      "id": "D11",
+      "request": "今回は調査だけ。編集や後続実行はしないで。",
+      "state": {"cycle": "0008", "next_step": 1, "cycle_status": "active", "circuit_status": "closed"},
+      "mission": "記事を根拠付きで改稿するMission。今回の利用者は、変更前の候補比較調査だけを求めている。"
+    },
+    {
+      "id": "D12",
+      "request": "次すすめて",
+      "state": {"cycle": "0014", "next_step": 5, "cycle_status": "active", "circuit_status": "closed"},
+      "mission": "Step 2のDoDは比較本文・出典・条件照合一式。実Artifactは見出しと候補名だけ。足りない根拠には再調査が必要。評価記録、BACKLOG、Step 6〜8、STATEは安全に保存できる。"
+    }
+  ]
+}

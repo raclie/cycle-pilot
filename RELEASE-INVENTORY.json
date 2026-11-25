@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "edition": "manual-skills-preview",
+  "historyIncluded": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 336,
+      "sha256": "968e1fe54884ceb38750c6f805431da866275b1d4ab2105cd536dbcdedb480ec"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/report.yml",
+      "bytes": 1909,
+      "sha256": "b651742fdb6c88198b909872045df8d9b25d59322193b630ddc63057f94def32"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "bytes": 486,
+      "sha256": "b347bc2be9c9395420e30382c625a118454dea4dd3c3691a72e1b515dddbd39c"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 64,
+      "sha256": "5ee2834ffacba1d66a121cd885ea96f4517b80c9d2668247b0be595480f5e6f5"
+    },
+    {
+      "path": "ACTIVE_CONTEXT.md",
+      "bytes": 403,
+      "sha256": "036acda829d743192b0fbafdefc33ba95fbcd5dd9c5c1f89ad2cbde94703177c"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1555,
+      "sha256": "2401abc5b7f46a00afcf5d9711860903290efe0ac96bf714f72673407a1b0576"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1592,
+      "sha256": "6d859c0f470485901dee9e7d186d0d353d78bbfff1ba1891178792b9d47b8861"
+    },
+    {
+      "path": "cycle-observations/registry.md",
+      "bytes": 197,
+      "sha256": "063e2a1a33ba404797dd9609c002dcebd12ea76aaadcd7e7b8d3277e95f42ea4"
+    },
+    {
+      "path": "docs/architecture/diagrams.md",
+      "bytes": 791,
+      "sha256": "6a3ab80aa2d81f2327cc12794b542c01ab89f01b654f24852f890dec8a527255"
+    },
+    {
+      "path": "docs/architecture/README.md",
+      "bytes": 625,
+      "sha256": "c5331cacd618dacc41ee09f1a08995d1cfd598798b36498256f394096ec0d48a"
+    },
+    {
+      "path": "docs/architecture/stage-boundary.md",
+      "bytes": 703,
+      "sha256": "6795c7f4f11826acb1237b20712504c009df64fc87d5b885cae07f55088ef5dc"
+    },
+    {
+      "path": "examples/manual-cycle.md",
+      "bytes": 2930,
+      "sha256": "70ddd51a027c0838ee9b7969f45f1f828ec977696c056d55024aa0186096ab24"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1063,
+      "sha256": "485fe5eacd111bdfcb9a153306727ce157f310348def2b29bed3e1ced00319d4"
+    },
+    {
+      "path": "package.json",
+      "bytes": 195,
+      "sha256": "0cd49aed98d7577cbe7719317f82adbed6dbf1d6b1e0355720b377fa0221d8e8"
+    },
+    {
+      "path": "PUBLICATION.json",
+      "bytes": 275,
+      "sha256": "3cf0570e7ee4e4cfebdea4a58927580625f0a262a63cb8c99ef169deb2e5359e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12673,
+      "sha256": "e835532406b7e67e1cf56d3a26e0342714811bcc638f69c56503a869cda03435"
+    },
+    {
+      "path": "scripts/init-example.mjs",
+      "bytes": 3896,
+      "sha256": "f57142eafa2d4b90e2b5ec3144e8de997540954d2360e4c5f641f8a1e2604c23"
+    },
+    {
+      "path": "scripts/verify-release.mjs",
+      "bytes": 5540,
+      "sha256": "c7d5e97956b51519a53a8592d368cb5ea3195b19f5f31360cb337cc83b3e616d"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1093,
+      "sha256": "31dbdafcfcf150adc33e15aef485cf0e8254b919ce58d387f2dfbf850e990b5d"
+    },
+    {
+      "path": "skills/gpt-engine/evals/cycle-delivery-cases.json",
+      "bytes": 5720,
+      "sha256": "323d1c7f0fa9a16800f9aa7094edde735286c9e1517db5046902d89f8ba73594"
+    },
+    {
+      "path": "skills/gpt-engine/evals/cycle-work-budget-cases.json",
+      "bytes": 3453,
+      "sha256": "a1e01e31b8c6e473411ca3eaa2c76559cd3bcb2548ea3cae5a73f65e60042199"
+    },
+    {
+      "path": "skills/gpt-engine/evals/skill-federation-cases.json",
+      "bytes": 3094,
+      "sha256": "bc16eca3f7b82909b1ffe56e3c7428794757322abb7bc5fb17cbaf0942b54109"
+    },
+    {
+      "path": "skills/gpt-engine/profiles/japanese-editorial.md",
+      "bytes": 467,
+      "sha256": "e737b719cb88dcdfdbcfaedf49c2687497f55a843d11b4a0f0695b64cff0493d"
+    },
+    {
+      "path": "skills/gpt-engine/rules/cycle-delivery.md",
+      "bytes": 12219,
+      "sha256": "eb213dd41e5b4ae4799dfff60f85db4c768970e7be7da1d746b1414b7dca707f"
+    },
+    {
+      "path": "skills/gpt-engine/rules/cycle-observation-policy.md",
+      "bytes": 1917,
+      "sha256": "663beb44ecbf602496cfbccf86f3d6f25a193dc85daed1ac7d475902d18b9e56"
+    },
+    {
+      "path": "skills/gpt-engine/rules/cycle-transition.md",
+      "bytes": 2272,
+      "sha256": "b1ab69f996b72557b4a5e054a86c437104d71efbc5ee91a203d36646c1050dd6"
+    },
+    {
+      "path": "skills/gpt-engine/rules/github-persistence.md",
+      "bytes": 7552,
+      "sha256": "ba4e496352a32724c65591e33bf99bb60fe6fac84f2c9170d3c9f6082068d476"
+    },
+    {
+      "path": "skills/gpt-engine/rules/harness-evidence-and-effects.md",
+      "bytes": 4604,
+      "sha256": "a002be54919c756efbfe3540c08156e150600cf51df9a85e449bcca90c118979"
+    },
+    {
+      "path": "skills/gpt-engine/rules/japanese-editorial.md",
+      "bytes": 1056,
+      "sha256": "668d8431b537d128516923ebfc02f9c4acde535db96fc94faf81f21fcbd55cab"
+    },
+    {
+      "path": "skills/gpt-engine/rules/know-how-return.md",
+      "bytes": 6881,
+      "sha256": "6849248f075e610eb1ef33591d2a8b2717f3431111d51fb08dc78fb97fcad293"
+    },
+    {
+      "path": "skills/gpt-engine/rules/quality-standards.md",
+      "bytes": 1090,
+      "sha256": "42f216ff0a8a735ba63e7c0b576f9c6d4ea62a030b14dcce989872b94da52cdf"
+    },
+    {
+      "path": "skills/gpt-engine/rules/research.md",
+      "bytes": 1735,
+      "sha256": "9767bf213d58dcce44c00244e47cb30f240430fbc671b3b78f99221e996ad31f"
+    },
+    {
+      "path": "skills/gpt-engine/rules/retry-policy.md",
+      "bytes": 6439,
+      "sha256": "90f161569152a7be685a1bd0c42e908ff56edecbe66a3e2a408ab48925f47cb0"
+    },
+    {
+      "path": "skills/gpt-engine/rules/safe-source-reading.md",
+      "bytes": 3032,
+      "sha256": "461cb40a1c90c9d585f6457824f95fc276745b136700cc9464632b4fc95f507b"
+    },
+    {
+      "path": "skills/gpt-engine/rules/session-independent-ownership.md",
+      "bytes": 5694,
+      "sha256": "e68a80673dbd3d8d54aff6067e7930c9df957b0fe314c06c14f58b0c4c4ec62d"
+    },
+    {
+      "path": "skills/gpt-engine/rules/skill-federation.md",
+      "bytes": 11404,
+      "sha256": "20b44c66044c1153184c2a137544df59e38ee4b243c5f5fbab862fe58a61d82d"
+    },
+    {
+      "path": "skills/gpt-engine/rules/stage-boundary.md",
+      "bytes": 6790,
+      "sha256": "f75109391953b96aa467d668deaaec5c65faa742734aac62202645e107003754"
+    },
+    {
+      "path": "skills/gpt-engine/SKILL.md",
+      "bytes": 8324,
+      "sha256": "d5af36b00c4d28f0c0956d206e810040f1e3f487bdd3df7f5eee217449d9aae6"
+    },
+    {
+      "path": "skills/gpt-engine/steps/step-1-analyze.md",
+      "bytes": 3484,
+      "sha256": "64f84a753ae49f841f6d12fa319339e1bc2dc1af4cb4ccfd5235f542db2cc7c6"
+    },
+    {
+      "path": "skills/gpt-engine/steps/step-2-select.md",
+      "bytes": 3026,
+      "sha256": "0e45020a592805d7442a22b7bcb55960339dc9f42d185b7b31b5e1de80537710"
+    },
+    {
+      "path": "skills/gpt-engine/steps/step-3-prompt.md",
+      "bytes": 1858,
+      "sha256": "6689e2466420504bd76d751d4b0d92710e61f60bee854bf923d58b371df0f243"
+    },
+    {
+      "path": "skills/gpt-engine/steps/step-4-execute.md",
+      "bytes": 2123,
+      "sha256": "b2487091dca6d531baf11e7edabb05f62640cbcfe89bb91144681899ef18ac79"
+    },
+    {
+      "path": "skills/gpt-engine/steps/step-5-evaluate.md",
+      "bytes": 1947,
+      "sha256": "f66dea5f0cf48a2a80c0fce57608885953e271bce79fb037097265e53f7b40b5"
+    },
+    {
+      "path": "skills/gpt-engine/steps/step-6-improve-engine.md",
+      "bytes": 4168,
+      "sha256": "6b02895a00eccbc0f14c67100e481decce949ca37b3219989e365455beacb89e"
+    },
+    {
+      "path": "skills/gpt-engine/steps/step-7-observe-cycle.md",
+      "bytes": 2026,
+      "sha256": "1e1410197950a46271724bd88d69e2ecf61a718b339c2ed43ee66472de8e87ab"
+    },
+    {
+      "path": "skills/gpt-engine/steps/step-8-sync-architecture.md",
+      "bytes": 2109,
+      "sha256": "7d7d2238417e54f442ab50cd3a26771519745243ea29415c7e17afd9fa3a628d"
+    },
+    {
+      "path": "skills/session-repository/SKILL.md",
+      "bytes": 1577,
+      "sha256": "81d9c63468f8e879a45eee81e0f7c863c8d433a9b72480062d827f0449da4821"
+    },
+    {
+      "path": "templates/01-analysis.md",
+      "bytes": 745,
+      "sha256": "9267a4abaca7e8f0e85de90024eee073432eaf73df4c4ac6e4cf9b603e43732c"
+    },
+    {
+      "path": "templates/02-task.md",
+      "bytes": 1112,
+      "sha256": "ba9b5214327de69ac57eefe4c1aa924dbdcd244ed913edd3e257716f5d390655"
+    },
+    {
+      "path": "templates/03-prompt.md",
+      "bytes": 1256,
+      "sha256": "fe6ded0d6cbf29a429b2e11db647ee109c9f29ef9b90c694135225f8af97e916"
+    },
+    {
+      "path": "templates/04-output-README.md",
+      "bytes": 147,
+      "sha256": "9bd6d7f443722aa09f1cdd4e18ed338505e85d605c4e2c521e8f98db38499c46"
+    },
+    {
+      "path": "templates/05-evaluation.md",
+      "bytes": 2658,
+      "sha256": "53392cbf45c7152af1922d93ae15d00ec98c00fd9592ffdc3eb8ba303d98cf66"
+    },
+    {
+      "path": "templates/06-know-how-return.md",
+      "bytes": 852,
+      "sha256": "f7aa4fb8026f71ce09d9eb5e6105fe942f88012104d0d79b90242ca3ca498ca3"
+    },
+    {
+      "path": "tests/public-preview.test.mjs",
+      "bytes": 10001,
+      "sha256": "32f2cb03e36238f441300b092043c14945047b40c742289d6f70053f8b8c71d8"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 345,
+      "sha256": "6ad1be12ddb24f69d2b5e71fef428b3ed3bcdb5449adff06b0eb7728376a85f0"
+    }
+  ]
+}

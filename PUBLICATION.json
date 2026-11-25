@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "status": "public-preview",
+  "edition": "manual-skills-preview",
+  "publicationApproved": true,
+  "originalCodeLicense": "MIT",
+  "targetRepository": "raclie/cycle-pilot",
+  "automaticPostingEnabled": false,
+  "includesOperationalHistory": false
+}
