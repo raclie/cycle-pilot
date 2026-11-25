@@ -8,6 +8,8 @@ description: AIとの作業を、分析・選定・指示・実行・評価・�
 ## Purpose
 任意のMissionへ8段サイクルを適用するGlobal Engine Skill。
 
+**この版の範囲**: 8工程が作るのは、設計・草案・引継ぎの文書までで、実装や実環境への反映は含みません。引継ぎの文書を作るのは、作業の続きを会話の再開機能ではなく保存した記録（成果物とSTATE）で引き継ぐためです。本来の設計はスケジュールで稼働する自律運転で、この版はその部品を手動で試せる形に絞ったものです。詳しくはREADME.mdを参照してください。
+
 業務基準のあるWorkspaceではrules/quality-standards.mdを適用する。取得元・adapterはWorkspaceが指定し、Globalは個別事業の業務知識を持たない。
 
 ## Work hierarchy

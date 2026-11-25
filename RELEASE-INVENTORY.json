@@ -35,8 +35,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1555,
-      "sha256": "2401abc5b7f46a00afcf5d9711860903290efe0ac96bf714f72673407a1b0576"
+      "bytes": 2335,
+      "sha256": "400f03ed19b6f56a10fdaa52cbba8bae14a3072099220c651ce0b3d2f98ac2ac"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -85,8 +85,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14791,
-      "sha256": "8957a397b11881fa4163d074ee932c3c2c71e12e10248d4a65b7e4f9bd55b430"
+      "bytes": 15096,
+      "sha256": "3df2fb23aa309f30418edfce4ec40e6052ffa38827e28789c33928b6261c8cfb"
     },
     {
       "path": "scripts/init-example.mjs",
@@ -195,8 +195,8 @@
     },
     {
       "path": "skills/gpt-engine/SKILL.md",
-      "bytes": 8324,
-      "sha256": "d5af36b00c4d28f0c0956d206e810040f1e3f487bdd3df7f5eee217449d9aae6"
+      "bytes": 8827,
+      "sha256": "bf1277db37a834bf23529f4a1fdf136928e01b11441ae36f450955f7a2c2e135"
     },
     {
       "path": "skills/gpt-engine/steps/step-1-analyze.md",
