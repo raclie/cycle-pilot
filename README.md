@@ -1,16 +1,24 @@
 # Cycle Pilot
 
-AIとの作業を、分析・選定・指示・実行・評価・改善・観測・設計同期の8工程で進めるSkillセットです。成果物と現在位置をGitHubに保存し、途中から再開できます。
+AIとの作業を、分析・選定・指示・実行・評価・改善・観測・設計同期の8工程で進めるSkillセットです。成果物と現在位置をGitHubに保存し、途中から再開できます。AIの会話や再開機能（resume）には頼りません。再開機能のないAIや、途中で別のAIに替わった場合でも、保存された記録だけから作業を引き継げます。
 
 **Cycle Pilot** is a manual, 8-step Skill set for working with an AI: analyze, select, prompt, execute, evaluate, improve, observe, and sync the design. Progress is saved to GitHub so work can resume from where it stopped. This is a preview (v0.1). The steps produce plans, drafts and hand-off documents; they do not implement or deploy anything. The documents are written in Japanese. MIT License. This project is not affiliated with, endorsed by, or sponsored by any AI provider or other company or organization; product names mentioned in the documents belong to their owners.
 
 この版はプレビュー（v0.1）です。開発履歴や実業務データは含めません。**8工程が作るのは、設計・草案・引継ぎの文書までです。** 実装や実環境への反映は、この版の範囲に含みません。
 
+> **中心の考え方**: 作業の続きを、AIの記憶や会話の再開機能（resume）に預けず、GitHub上の成果物と現在位置（STATE）に残します。これにより、再開機能を持つAIだけでなく、再開できないAIでも、会話が切れた後に入った別のAIでも、記録を読めば作業を引き継げます。8工程が「引継ぎの文書」を作るのは、このためです。実装や実行を別の担当へ渡すときも、同じ記録で引き継ぎます。
+>
+> **本来の設計との関係（必ずお読みください）**: Cycle Pilot は本来、AIをスケジュールで稼働させ、人が日々の作業に関わらずに自律して回し続けることを前提に設計されています。人の確認は、定期の報告で行う想定です。この版は、その部品（Skill、STATE、完了条件、観測の記録）を**手動で試せる形に絞ったプレビュー**で、自動で回す仕組み（定期実行、常駐の実行役）と運用履歴は含みません。以下の「自動運転ではありません」「8工程は文書まで」は、**この版の範囲の説明**であり、設計の前提ではありません。
+>
+> *Core idea: work continuity lives in saved artifacts and STATE on GitHub, not in an AI's memory or resume feature, so even an AI that cannot resume a session, or a different AI taking over mid-way, can continue from the records alone.*
+>
+> *Cycle Pilot is designed to run autonomously, with AI agents started on a schedule and people reviewing periodic reports rather than directing each cycle. This v0.1 preview is a reduced, manual-use cut of its parts (Skills, STATE, definition of done, observation records) and does not include the scheduling or runner machinery. Statements below such as "not autonomous" describe the scope of this preview, not the design premise.*
+
 ## 対象と前提
 
 - **対象**: GitHubのrepositoryを読み書きできるAIエージェント（ChatGPT、Codex、Claudeなど）を、手動で使って仕事を進める人。
 - **前提**: Node.js 22以上（初期化と自己検査のscriptを動かすためだけに使います）、自分の非公開repository、AIがそのrepositoryへ保存するための権限（自分の環境で用意します）。
-- **自動運転ではありません**: 人が「次をすすめて」と頼むたびに、AIが1周進めます。定期実行や常駐の仕組みは含みません。
+- **この版は自動運転ではありません**: 人が「次をすすめて」と頼むたびに、AIが1周進めます。定期実行や常駐の仕組みは含みません。
 - **役割の分け方**: 文書は、仕事を「事前構築」（設計・草案・引継ぎ。このSkillの担当）と「本構築」（実装・実行。別のAIまたは別の担当）に分ける運用を想定して書かれています。**この版が扱うのは事前構築までで、本構築の手順は含みません。** 文書中の「GPT」「Codex」は、多くの箇所で、それぞれ事前構築・本構築を担当するAIの意味で使われています。製品名として書かれていても、特定の製品に限りません。1つのAIで実装まで進める使い方は、この版では対応していません。8工程で引継ぎ文書まで作り、実装は、8工程の外の別の依頼として行ってください。
 
 ### 用語

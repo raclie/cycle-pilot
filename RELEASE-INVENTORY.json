@@ -85,8 +85,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12673,
-      "sha256": "e835532406b7e67e1cf56d3a26e0342714811bcc638f69c56503a869cda03435"
+      "bytes": 14791,
+      "sha256": "8957a397b11881fa4163d074ee932c3c2c71e12e10248d4a65b7e4f9bd55b430"
     },
     {
       "path": "scripts/init-example.mjs",
